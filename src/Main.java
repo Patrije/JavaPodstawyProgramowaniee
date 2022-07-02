@@ -8,10 +8,6 @@ public class Main {
 //        Activities sledding = new Activities(Seasons.WINTER);
 //        Activities readingBooks = new Activities(Seasons.AUTUMN);
 
-        for (Months month : Months.values()) {
-            System.out.println(month.name() + " has " + month.getDays() + " days.");
-        }
-
 
     }
 }
