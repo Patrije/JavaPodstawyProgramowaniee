@@ -6,8 +6,8 @@ import java.util.regex.Pattern;
 public class RegexExample {
 
     public static void main(String[] args) {
-        Pattern compiledPattern = Pattern.compile("[abcd]{9}p");
-        Matcher matcher = compiledPattern.matcher("abcaabaaap");
+        Pattern compiledPattern = Pattern.compile(".+@.{2,}\\.[a-z]+");
+        Matcher matcher = compiledPattern.matcher("pbr@gmail.com");
 
         System.out.println(matcher.matches());
     }
