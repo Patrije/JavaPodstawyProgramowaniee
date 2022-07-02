@@ -22,11 +22,4 @@ public enum DniWMiesiacu {
         return theDays;
     }
 
-    public void setTheDays(double theDays) {
-        this.theDays = theDays;
-    }
-    
-    static void theMonthDays(){
-
-    }
 }
