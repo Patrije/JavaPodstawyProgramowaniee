@@ -11,6 +11,9 @@ public class RegexExample {
 
         System.out.println(matcher.matches());
 
+        Pattern isCorrect = Pattern.compile(".+@\\.[a-z]\\.+");
+        Matcher matcher1 = isCorrect.matcher("michLangner@gmail.com");
+        System.out.println(matcher1.matches());
 
 
     }
