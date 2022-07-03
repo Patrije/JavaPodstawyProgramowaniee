@@ -25,7 +25,7 @@ public class Zadanie6 {
         {
             in.nextLine();
         }
-        String longestString = getLongestString(); //???
-        System.out.format("Najdluzsze slowo to " + longestString);
+        //String longestString = getLongestString(); //???
+        //System.out.format("Najdluzsze slowo to " + longestString);
     }
 }
