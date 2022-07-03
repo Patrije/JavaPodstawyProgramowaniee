@@ -14,7 +14,6 @@ public class zadanie_1 {
     }
 
     static float obwodKola(float r) {
-        float obwod = (float) (2 * Math.PI * r);
-        return obwod;
+        return (float) (2 * Math.PI * r);
     }
 }

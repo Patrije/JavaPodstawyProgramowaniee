@@ -7,13 +7,9 @@ public class zadanie_2 {
    static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-
-
         bodyMaxIndex();
-
     }
     static float bodyMaxIndex(){
-
         System.out.println("Podaj swoja wage: ");
         float weight = scanner.nextFloat();
 
