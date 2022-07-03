@@ -7,17 +7,25 @@ public class Zadanie2 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj wage (kg): ");
         float waga = scanner.nextFloat();
-
         System.out.println("Podaj wzrost (cm): ");
         int wzrost = scanner.nextInt();
-        float wzrost2 = (float) wzrost / 100;
 
-        float wartoscBMI = waga / wzrost2 * wzrost2;
+        interpretBmi(waga, wzrost);
+    }
 
-        if (wartoscBMI <= 18.5 && wartoscBMI >= 24.9) {
+    private static void interpretBmi(float waga, int wzrost) {
+        double wartoscBMI= getBmi(waga, wzrost);
+        if (wartoscBMI <= 18 && wartoscBMI >= 24.9) {
             System.out.println("BMI optymalne");
         } else {
             System.out.println("BMI nieoptymalne");
         }
     }
+
+    private static double getBmi(float waga, float wzrost){
+        float wzrost2 =  wzrost / 100;
+
+        return waga / wzrost2 * wzrost2;
+    }
+
 }

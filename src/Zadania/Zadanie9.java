@@ -8,5 +8,5 @@ public class Zadanie9 {
     Scanner scanner = new Scanner(System.in);
     String str = scanner.next();
     Pattern pattern = Pattern.compile("");
-    Matcher matcher = pattern.matcher();
+//    Matcher matcher = pattern.matcher();
 }
