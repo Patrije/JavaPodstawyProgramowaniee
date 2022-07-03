@@ -16,15 +16,15 @@ public class Zadanie6 {
 
         String longestText = "";
         String userInput;
-        String condition = "Starczy";
+        String endLoopCondition = "Starczy";
 
         do{
             System.out.println("Podaj text, na slowo 'Starczy' konczymy");
             userInput = scanner.next();
-            if(userInput.length()>longestText.length() && !userInput.equals(condition)){
+            if(userInput.length()>longestText.length() && !userInput.equals(endLoopCondition)){
                 longestText = userInput;
             }
-        } while(!userInput.equals(condition));
+        } while(!userInput.equals(endLoopCondition));
         System.out.println(longestText);
     }
 }

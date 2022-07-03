@@ -17,7 +17,7 @@ public class Zadanie9 {
         System.out.println("Podaj ciag znakow");
         Scanner scanner = new Scanner(System.in);
         String sneeze = scanner.nextLine();
-        Pattern pattern = Pattern.compile("a{1,} psik");
+        Pattern pattern = Pattern.compile("a+ psik");
         Matcher matcher = pattern.matcher(sneeze);
         if(matcher.matches()){
             System.out.println("Kichnales");

@@ -19,7 +19,7 @@ public class Zadanie8 {
         System.out.println(countDaysToNextLesson(scanner.next()) + " " + "days left");
     }
 
-    private static final int countDaysToNextLesson(String date){
+    private static int countDaysToNextLesson(String date){
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
         LocalDate lessonDate = LocalDate.parse(date, formatter);
