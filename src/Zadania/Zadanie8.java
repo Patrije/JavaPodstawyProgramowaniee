@@ -9,8 +9,7 @@ public class Zadanie8 {
         System.out.println("Podaj date nastepnych zajec (YYYY-MM-DD): ");
         String str = scanner.next();
         LocalDate d = LocalDate.parse(str);
-        LocalDate.now();
-
+        LocalDate lt = LocalDate.now();
 
     }
 }
