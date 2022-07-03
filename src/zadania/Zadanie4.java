@@ -16,27 +16,24 @@ public class Zadanie4 {
             }
         }
 
-        for(int i = 2 ; i<=userNumber/2; i++){
-            if(isPrimeNumber(i)){
+        for (int i = 2; i <= userNumber / 2; i++) {
+            if (isPrimeNumber(i)) {
                 System.out.println(i);
             }
 
         }
 
 
+    }
 
-
-
-
-        }
-        static int loadNumber () {
-            System.out.println("Podaj dodatnią liczbę: ");
-            return s.nextInt();
-        }
+    static int loadNumber() {
+        System.out.println("Podaj dodatnią liczbę: ");
+        return s.nextInt();
+    }
 
     static boolean isPrimeNumber(int x) {
 
-        for (int i = 2; i < x/2; i++) {
+        for (int i = 2; i < x / 2; i++) {
             if (x % i == 0) {
                 return false;
 
@@ -44,4 +41,4 @@ public class Zadanie4 {
         }
         return true;
     }
-    }
+}

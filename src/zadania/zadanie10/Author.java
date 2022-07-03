@@ -15,7 +15,6 @@ public class Author {
         return surname;
     }
 
-
     public String getNationality() {
         return nationality;
     }
