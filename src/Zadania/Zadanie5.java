@@ -16,6 +16,6 @@ public class Zadanie5 {
             sum = sum + digit;
             number = number / 10;
         }
-        System.out.println("Suma cyfr liczby: "+sum);
+        System.out.println("Suma cyfr liczby: " + sum);
     }
 }
