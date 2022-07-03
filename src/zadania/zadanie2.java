@@ -2,24 +2,25 @@ package zadania;
 
 public class zadanie2 {
 
-    float bmi, masa;
-    int wzrost;
+    static float bmi;
+   static float masa = 50;
+   static int wzrost = 170;
 
     // BMI= masa(kg)/wzrost[m]//
 
-    double a = 18.5,
-    double b = 24.9;
+   static double dolnaGranica = 18.5;
+   static double gornaGranica = 24.9;
 
-    public float getBmi("masa/wzrost") {
-        return bmi;
+    public static void main(String[] args) {
+        if(getBmi(masa, wzrost) >= dolnaGranica && getBmi(masa, wzrost) <=gornaGranica){
+            System.out.println("waga prawidlowa");
+        } else {
+            System.out.println("waga nieprawidlowa");
+        }
     }
 
-    System.out.println(bmi > b && bmi < a);
-    if (bmi > b && bmi < a)
-        System.out.println("BMI nieoptymalne");
-    else
-        System.out.println("BMI optymalne");
-
-
+    public static float getBmi(float waga, int wzrost) {
+        return waga/wzrost;
+    }
 
 }
