@@ -13,12 +13,5 @@ public class Zadanie7 {
             System.out.print("Wpisz " + (i+1) + ". liczbe: ");
             num = scan.nextInt();
         }
-
-        if (num > highest) {
-            highest = num;
-        }
-
-        System.out.println("Najwieksza liczba to: " + highest);
-
     }
 }
