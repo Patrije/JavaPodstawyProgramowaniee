@@ -18,6 +18,23 @@ public class Zadanie_6 {
         String theLongest = "";
         System.out.println("We will try to find the longest word.. If you want to quit enter [Starczy]!");
 
+        extracted(wordsFromUser);
+
+        theLongest = getString(wordsFromUser, theLongest);
+        System.out.println("The longest string is: " + theLongest);
+    }
+
+    private static String getString(ArrayList<String> wordsFromUser, String theLongest) {
+        for (String s : wordsFromUser) {
+            if (s.length() > theLongest.length() && !s.equals("Starczy")) {
+                theLongest = s;
+            }
+        }
+        return theLongest;
+    }
+
+    private static void extracted(ArrayList<String> wordsFromUser) {
+        String usersWord;
         do {
             System.out.println("Enter some word:");
             usersWord = scanner.nextLine();
@@ -25,13 +42,6 @@ public class Zadanie_6 {
                 System.out.println("Nie podano żadnego tekstu!");
             }
             wordsFromUser.add(usersWord);
-        } while (!Objects.equals(usersWord, "Starczy"));
-
-        for (String s : wordsFromUser) {
-            if (s.length() > theLongest.length() && !s.equals("Starczy")) {
-                theLongest = s;
-            }
-        }
-        System.out.println("The longest string is: " + theLongest);
+        } while (!"Starczy".equals(usersWord));
     }
 }

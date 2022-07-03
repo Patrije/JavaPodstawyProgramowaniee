@@ -2,6 +2,7 @@ package Zadania;
 
 import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Zadanie_7 {
@@ -9,13 +10,12 @@ public class Zadanie_7 {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-
         duplicatedNumbers();
     }
 
     private static void duplicatedNumbers() {
         int [] array = new int[10];
-        ArrayList<Integer> dupNum = new ArrayList<>();
+        List<Integer> dupNum = new ArrayList<>();
 
         System.out.println("Please enter ten numbers [int]:");
         for (int i = 0; i <= 9; i++) {
