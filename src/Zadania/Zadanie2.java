@@ -13,10 +13,11 @@ public class Zadanie2 {
         float wzrost2 = (float) wzrost / 100;
 
         float wartoscBMI = waga / wzrost2 * wzrost2;
-        System.out.println(wartoscBMI);
+
         if (wartoscBMI <= 18.5 && wartoscBMI >= 24.9) {
             System.out.println("BMI optymalne");
+        } else {
+            System.out.println("BMI nieoptymalne");
         }
-        return;
     }
 }
