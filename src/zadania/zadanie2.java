@@ -10,13 +10,14 @@ public class zadanie2 {
         float weight = scan.nextFloat();
         System.out.println("Heigh: ");
         int heigh = scan.nextInt();
-        float BMI = weight / (heigh ^ 2);
+        float height = (float)heigh/100;
+        float BMI = weight / (height*height);
 
         if (BMI >= 18.5 && BMI <= 24.9) {
-            System.out.println("BMI optymalne");
+            System.out.println("BMI optymalne"+ BMI);
 
         } else {
-            System.out.println("BMI nieoptymalne");
+            System.out.println("BMI nieoptymalne" +BMI);
         }
 
     }
