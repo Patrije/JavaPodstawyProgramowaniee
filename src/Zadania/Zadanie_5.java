@@ -2,7 +2,7 @@ package Zadania;
 
 public class Zadanie_5 {
     public static void main(String[] args) {
-        countingDigits(15);
+        countingDigits(258);
     }
 
     private static void countingDigits(int i) {
