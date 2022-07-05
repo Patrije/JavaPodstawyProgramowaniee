@@ -2,8 +2,8 @@ package Zadania.Zadanie10;
 
 public class Poem {
 
-    private Author creator;
-    private int stropheNumbers;
+    private final Author creator;
+    private final int stropheNumbers;
 
     public Poem(Author creator, int stropheNumbers) {
         this.creator = creator;

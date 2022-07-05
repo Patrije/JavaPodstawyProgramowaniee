@@ -2,7 +2,6 @@ package Zadania;
 
 public class Zadanie_5 {
     public static void main(String[] args) {
-
         countingDigits(15);
     }
 
@@ -18,6 +17,14 @@ public class Zadanie_5 {
             i -= modulo;
             sum += modulo;
         } while (i > 0);
+
+
+        while(i > 0)
+        {
+            modulo = i % 10;
+            sum = sum + modulo;
+            i = i / 10;
+        }
 
         System.out.println("Sum of digits: " + sum);
     }

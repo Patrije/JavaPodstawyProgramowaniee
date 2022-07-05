@@ -2,9 +2,7 @@ package Zadania;
 
 public class Zadanie_3 {
     public static void main(String[] args) {
-
         pifPafMethod(146);
-
     }
 
     private static void pifPafMethod(int enterYourNumber) {

@@ -2,9 +2,7 @@ package Zadania;
 
 public class Zadanie_2 {
     public static void main(String[] args) {
-
         countYourBMI( 176, 87.9f);
-
     }
 
     private static void countYourBMI(int yourHeightInCentymitres, float yourWeightInKilograms) {
