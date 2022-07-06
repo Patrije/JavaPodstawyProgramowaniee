@@ -16,7 +16,7 @@ public class Zadanie_13 {
         System.out.println("Enter your postcode [XX-XXX]:");
         String s1 = scanner.nextLine();
 
-        Pattern compiledPattern = Pattern.compile("[0-9]{2}-[0-9]{3}");
+        Pattern compiledPattern = Pattern.compile("^[0-9]{2}-[0-9]{3}$");
         Matcher matcher = compiledPattern.matcher(s1);
 
         System.out.println("It's postcode: " + matcher.matches());
