@@ -1,5 +1,7 @@
 package Zadania;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Scanner;
 
 public class Zadanie_22 {
@@ -15,6 +17,7 @@ public class Zadanie_22 {
         System.out.println("If you want to count Your tax enter your net salary:");
         float salary = scanner.nextFloat();
         float tax = 0.19f * salary;
-        System.out.println("You have to pay " + tax);
+        BigDecimal taxMoney = new BigDecimal(tax).setScale(2, RoundingMode.HALF_EVEN);
+        System.out.println("You have to pay " + taxMoney);
     }
 }
