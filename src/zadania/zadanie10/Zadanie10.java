@@ -31,8 +31,6 @@ public class Zadanie10 {
                 System.out.println("Author with longest poem is " + p.getCreator().getSurname());
             }
         }
-
-
     }
 }
 

@@ -11,7 +11,7 @@ public class Zadanie1 {
     public static void main(String[] args) {
 
         float a = loadNumber();
-        float poleKola = a * 2 * (float)Math.PI;
+        float poleKola = a * (float)Math.PI;
         System.out.println("Pole koła wynosi: " + poleKola);
 
     }
