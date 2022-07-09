@@ -11,14 +11,14 @@ public class Zadanie23 {
     }
 
     private static void amountMethod() {
-        int[] tab = new int[20];
+        int[] numbersTab = new int[20];
         int counter = 0;
-        for (int i = 0; i < tab.length; i++) {
-            tab[i] = r.nextInt(11);
+        for (int i = 0; i < numbersTab.length; i++) {
+            numbersTab[i] = r.nextInt(11);
         }
         for (int i = 0; i <= 10; i++) {
-            for (int j = 0; j < tab.length; j++) {
-                if (tab[j] == i) {
+            for (int j = 0; j < numbersTab.length; j++) {
+                if (numbersTab[j] == i) {
                     counter++;
                 }
             }

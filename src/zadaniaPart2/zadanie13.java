@@ -10,7 +10,7 @@ public class zadanie13 {
         String zipCode2 = "31-474";
         String zipCode3 = "A2-300";
         String zipCode4 = "22-20!";
-        String zipCode5 = "22-20";
+        String zipCode5 = "22-201";
         System.out.println(zipCode(zipCode1));
         System.out.println(zipCode(zipCode2));
         System.out.println(zipCode(zipCode3));

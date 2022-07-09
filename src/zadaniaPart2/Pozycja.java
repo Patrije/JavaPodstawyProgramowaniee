@@ -8,6 +8,11 @@ public class Pozycja {
 
     private double wartoscZamowienia;
 
+    public Pozycja(String nazwaTowaru, double cenaZaSztuke) {
+        this.nazwaTowaru = nazwaTowaru;
+        this.cenaZaSztuke = cenaZaSztuke;
+    }
+
     public Pozycja(String nazwaTowaru, double cenaZaSztuke, int ileSztuk) {
         this.nazwaTowaru = nazwaTowaru;
         this.ileSztuk = ileSztuk;
@@ -54,5 +59,13 @@ public class Pozycja {
 
     public void setCenaZaSztuke(double cenaZaSztuke) {
         this.cenaZaSztuke = cenaZaSztuke;
+    }
+
+    public double getWartoscZamowienia() {
+        return wartoscZamowienia;
+    }
+
+    public void setWartoscZamowienia(double wartoscZamowienia) {
+        this.wartoscZamowienia = wartoscZamowienia;
     }
 }
