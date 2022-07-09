@@ -29,7 +29,6 @@ public class Zadanie10 {
         for (Poem p : poems) {
             if (poemLenght == p.getStropheNumbers()) {
                 System.out.println("Author with longest poem is " + p.getCreator().getSurname());
-                ;
             }
         }
 
