@@ -8,9 +8,8 @@ public class Zadanie4 {
         System.out.println("Podaj liczbe: ");
         int limit = new Scanner(System.in).nextInt();
 
-        System.out.println(limit);
+//        System.out.println(limit);
         for (int number = 2; number <= limit; number++) {
-
             if (isPrime(number)) {
                 System.out.println(number);
             }

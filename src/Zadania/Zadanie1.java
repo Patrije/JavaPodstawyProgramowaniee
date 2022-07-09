@@ -7,6 +7,7 @@ public class Zadanie1 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj srednice: ");
         float srednica = scanner.nextFloat();
-        System.out.println("Obwod kola to: " + 2 * Math.PI * srednica);
+        System.out.println("Obwod kola to: " + Math.PI * srednica);
+        System.out.println("Obwod kola to: " + 3.14 * srednica);
     }
 }
