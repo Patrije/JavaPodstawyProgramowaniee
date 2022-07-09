@@ -21,8 +21,8 @@ public class Zadanie5 {
     private static int obliczSumeCyfr(int liczba){
         int wynik =0;
         while(liczba !=0){
-            wynik += liczba%10;
-            liczba /=10;
+            wynik = wynik + liczba%10;
+            liczba = liczba / 10;
         }
         return wynik;
     }

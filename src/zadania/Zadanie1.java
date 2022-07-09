@@ -4,8 +4,8 @@ import java.util.Scanner;
 /*
 Zadanie 1
 Napisz program, który pobierze od użytkownika średnicę okręgu (zmienną typu float)
- i obliczy obwód tego okręgu. Do obliczeń przyjmij najpierw π = 3.14, a następnie
-  skorzystaj z wbudowanej klasy Math i znajdującej się tam stałej PI.
+i obliczy obwód tego okręgu. Do obliczeń przyjmij najpierw π = 3.14, a następnie
+skorzystaj z wbudowanej klasy Math i znajdującej się tam stałej PI.
  */
 public class Zadanie1 {
 

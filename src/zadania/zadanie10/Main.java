@@ -11,7 +11,7 @@ public class Main {
         Poem poem3 = new Poem(author3, 4000);
 
         Poem[] poems = new Poem[]{poem1, poem2, poem3};
-        Poem longestPoem = poem1;
+        Poem longestPoem = poem2;
 
         for (Poem poem:poems) {
             if(poem.getStropheNmbers()> longestPoem.getStropheNmbers()){

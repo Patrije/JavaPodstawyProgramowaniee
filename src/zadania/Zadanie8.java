@@ -16,13 +16,15 @@ public class Zadanie8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj date nast zajec w formacie dd-MM-YYYY");
-        System.out.println(countDaysToNextLesson(scanner.next()) + " " + "days left");
+        String userDate = scanner.next();
+        int liczbaDni = countDaysToNextLesson(userDate);
+        System.out.println(liczbaDni + " " + "days left");
     }
 
-    private static int countDaysToNextLesson(String date){
+    private static int countDaysToNextLesson(String userDate){
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
-        LocalDate lessonDate = LocalDate.parse(date, formatter);
+        LocalDate lessonDate = LocalDate.parse(userDate, formatter);
         return Period.between(LocalDate.now(), lessonDate).getDays();
     }
 }

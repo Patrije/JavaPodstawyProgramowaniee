@@ -5,13 +5,11 @@ import java.util.*;
 /*
 Napisz program, który pobierze od użytkownika 10 dowolnie dużych liczb
  (zmiennych typu int) i wypisze te, które wystąpiły minimum dwukrotnie.
-
  */
 public class Zadanie7 {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-
         duplicatedNumbers();
     }
 
