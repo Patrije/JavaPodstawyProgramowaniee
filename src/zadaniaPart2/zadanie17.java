@@ -54,7 +54,6 @@ public class zadanie17 {
         for (Workers worker : workers) {
 
             LocalDate howLongHired = LocalDate.parse(worker.getWhenHired(), formatter);
-            LocalDate hiredFor = ;
 
 
 
